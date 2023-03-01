@@ -25,7 +25,7 @@ public class Celda {
     
 @Override
 public String toString(){
-    return "Celda Mionada: "+minada+" estado: "+ estado + " fila : "+ filas + "columna: " +columnas ;
+    return "Celda Minada: "+minada+" estado: "+ estado + " fila : "+ filas + "columna: " +columnas ;
 }
     
 }
