@@ -6,9 +6,20 @@ package minessweeper;
  */
 public class Xogo {
  
-    private Celda[][] mineSweeper = new Celda[6][6];
+   
+    private int filas;
+    private int columnas;
+Celda[][] mineSweeper = new Celda[filas][columnas];
+    public Xogo(int filas, int columnas) {
+        this.filas = filas;
+        this.columnas = columnas;
+        
+        
+    }
+    
+    
 
-    public mineSweeper[][] getCelda(int fila, int columna) {
+    public Celda[][] getCelda(int fila, int columna) {
         return mineSweeper[fila][columna];
     }
     
