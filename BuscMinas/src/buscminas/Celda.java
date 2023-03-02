@@ -19,8 +19,37 @@ public class Celda {
         this.columnas = columnas;
     }
 
+    public void setMinada(boolean minada) {
+        this.minada = minada;
+    }
+
+    public void setEstado(int estado) {
+        this.estado = estado;
+    }
+
+    public boolean isMinada() {
+        return minada;
+    }
+
+    public int getEstado() {
+        return estado;
+    }
+
+    public int getFilas() {
+        return filas;
+    }
+
+    public int getColumnas() {
+        return columnas;
+    }
+
+
+    
+    
+    
+
     @Override
     public String toString() {
-        return "Celda Minada: " + minada + " estado: " + estado + " fila :" + filas + "columna : " + columnas;
+        return "Celda Minada: " + minada + " estado: " + estado + " fila: " + filas + " columna: " + columnas;
     }
 }
