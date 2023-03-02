@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package minessweeper;
 
 /**
  *
- * @author JOTA JOTA
+ * @author a18jaimejnq
  */
 public class Celda {
 
@@ -25,7 +21,6 @@ public class Celda {
     
 @Override
 public String toString(){
-    return "Celda Minada: "+minada+" estado: "+ estado + " fila : "+ filas + "columna: " +columnas ;
+    return "Celda Minada: "+minada+" estado: "+ estado + " fila :"+ filas + "columna : " +columnas ;
 }
-    
 }

@@ -8,7 +8,7 @@ public class Xogo {
 
     private int filas;
     private int columnas;
-    Celda[][] mineSweeper;
+    private Celda[][] mineSweeper;
 
     public Xogo(int filas, int columnas) {
         int contador = 0;
