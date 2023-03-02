@@ -1,11 +1,11 @@
-package minessweeper;
+package buscminas;
 
 /**
  *
  * @author a18jaimejnq
  */
 public class Xogo {
-
+    
     private int filas;
     private int columnas;
     private Celda[][] mineSweeper;
@@ -44,4 +44,5 @@ public class Xogo {
       public Celda getCelda(int fila, int columna){
           return mineSweeper[fila][columna];
       }
+
 }
