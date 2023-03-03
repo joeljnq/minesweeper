@@ -3,9 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="boletin_2">
-            <file>file:/E:/JOEL/DAW/PROGRAMACION/PROYECTO/minesweeper/minesweeper/BuscMinas/src/buscminas/BuscMinas.java</file>
-            <file>file:/E:/JOEL/DAW/PROGRAMACION/PROYECTO/minesweeper/minesweeper/BuscMinas/src/buscminas/Celda.java</file>
-            <file>file:/E:/JOEL/DAW/PROGRAMACION/PROYECTO/minesweeper/minesweeper/BuscMinas/src/buscminas/Xogo.java</file>
+            <file>file:/E:/JOEL/DAW/PROGRAMACION/PROYECTO/minesweeper/minesweeper/BuscMinas/src/buscaMinas/Xogo.java</file>
+            <file>file:/E:/JOEL/DAW/PROGRAMACION/PROYECTO/minesweeper/minesweeper/BuscMinas/src/buscaMinas/Celda.java</file>
+            <file>file:/E:/JOEL/DAW/PROGRAMACION/PROYECTO/minesweeper/minesweeper/BuscMinas/src/buscaMinas/Main.java</file>
         </group>
     </open-files>
 </project-private>
