@@ -1,4 +1,5 @@
 package buscaMinas;
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 /**
@@ -65,7 +66,10 @@ private Scanner teclado = new Scanner(System.in, "ISO-8859-1");
         }
       
         
+    
+            System.out.println(getCelasAdxacentes(cela)+ "\n");
         
+  
         
     }
 
@@ -105,6 +109,19 @@ private Scanner teclado = new Scanner(System.in, "ISO-8859-1");
         for (int i = 0; i < minas; i++) {
             mineSweeper[random.nextInt(6)][random.nextInt(6)].setMinada(true);
         }
+    }
+    
+    private ArrayList <Celda> getCelasAdxacentes(Celda cela){
+        ArrayList<Celda> toret = new ArrayList<>();
+        toret.add(mineSweeper[cela.getFilas()][cela.getColumnas()+1]);
+        toret.add(mineSweeper[cela.getFilas()][cela.getColumnas()-1]);
+        toret.add(mineSweeper[cela.getFilas()+1][cela.getColumnas()]);
+        toret.add(mineSweeper[cela.getFilas()+1][cela.getColumnas()-1]);
+        toret.add(mineSweeper[cela.getFilas()+1][cela.getColumnas()+1]);
+        toret.add(mineSweeper[cela.getFilas()-1][cela.getColumnas()]);
+        toret.add(mineSweeper[cela.getFilas()-1][cela.getColumnas()+1]);
+        toret.add(mineSweeper[cela.getFilas()-1][cela.getColumnas()-1]);
+        return toret;
     }
 
  
