@@ -67,7 +67,7 @@ private Scanner teclado = new Scanner(System.in, "ISO-8859-1");
       
         
     
-            System.out.println(getCelasAdxacentes(cela)+ "\n");
+         //   System.out.println(getCelasAdxacentes(cela)+ "\n");
         
   
         
@@ -122,6 +122,14 @@ private Scanner teclado = new Scanner(System.in, "ISO-8859-1");
         toret.add(mineSweeper[cela.getFilas()-1][cela.getColumnas()+1]);
         toret.add(mineSweeper[cela.getFilas()-1][cela.getColumnas()-1]);
         return toret;
+    }
+    
+    public void menuInterno(){
+       
+        System.out.println("\n 1.abrir Celda");
+        System.out.println("2. Abrir todas las celdas");
+        System.out.println("3. Comprueba si hay celdas por abrir");
+        System.out.println("4. meter minas");
     }
 
  
