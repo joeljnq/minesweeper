@@ -11,11 +11,11 @@ public class Main {
      */
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in, "ISO-8859-1");
-        Xogo a = new Xogo(6, 6, 10);
-        a.muestra();
+      int columnas,filas,minas;
+     
         System.out.println("");
     //    System.out.println(a.getCelda(5, 4));
-        a.abrirCela(a.getCelda(2, 2));
+        
        // a.abrirTodasCelas();
      //   System.out.println(a.comprobarCelasAbrir());
         
@@ -25,6 +25,11 @@ public class Main {
             System.out.println("1. Empezar partida");
             System.out.println("2. Salir");
             eleccionMenuPrincipal = teclado.nextInt();
+            if (eleccionMenuPrincipal == 1) {
+                System.out.println("Primero elige las filas, luego las columnas y por ultimo las minas que quieres que tenga el juego");
+                  Xogo a = new Xogo(filas = teclado.nextInt(), columnas = teclado.nextInt(), minas=teclado.nextInt());
+                  a.muestra();
+            }
         } while (eleccionMenuPrincipal != 2);
 
     }
