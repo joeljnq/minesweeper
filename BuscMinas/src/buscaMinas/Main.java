@@ -42,7 +42,7 @@ public class Main {
                         a.abrirCela(a.getCelda(filas = teclado.nextInt(), columnas = teclado.nextInt()));
                         a.muestra();
                         System.out.println("\n");
-                        finJuego = true;
+                        
                         if (!finJuego) {
                             a.menuInterno();
                             eleccionMenuInterno = teclado.nextInt();
