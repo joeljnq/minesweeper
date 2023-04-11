@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BuscMinas">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/BuscMinas.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

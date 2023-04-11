@@ -17,10 +17,6 @@ public class Main {
         boolean finJuego = false;
 
         System.out.println("");
-        //    System.out.println(a.getCelda(5, 4));
-
-        // a.abrirTodasCelas();
-        //   System.out.println(a.comprobarCelasAbrir());
         int eleccionMenuPrincipal = 0, eleccionMenuInterno = 0;
         do {
             System.out.println("1. Empezar partida");
@@ -29,20 +25,20 @@ public class Main {
             teclado.nextLine();
             if (eleccionMenuPrincipal == 1) {
 
-                while (eleccionMenuInterno != 4 && finJuego==false) {
-
-                    System.out.println("Primero elige las filas, luego las columnas y por ultimo las minas que quieres que tenga el juego");
-                    Xogo a = new Xogo(filas = teclado.nextInt(), columnas = teclado.nextInt(), minas = teclado.nextInt());
+                System.out.println("Primero elige las filas, luego las columnas y por ultimo las minas que quieres que tenga el juego");
+                Xogo a = new Xogo(filas = teclado.nextInt(), columnas = teclado.nextInt(), minas = teclado.nextInt());
+                do {
                     a.muestra();
                     a.menuInterno();
                     eleccionMenuInterno = teclado.nextInt();
+
                     if (eleccionMenuInterno == 1 && finJuego == false) {
                         System.out.println("primero pon la fila de la celda que quieres abrir");
                         System.out.println("Luego pon la columna");
                         a.abrirCela(a.getCelda(filas = teclado.nextInt(), columnas = teclado.nextInt()));
                         a.muestra();
                         System.out.println("\n");
-                        
+
                         if (!finJuego) {
                             a.menuInterno();
                             eleccionMenuInterno = teclado.nextInt();
@@ -62,13 +58,11 @@ public class Main {
                         System.out.println(a.comprobarCelasAbrir());
 
                     }
-                }
+                } while (eleccionMenuInterno != 4 && finJuego == false);
 
             }
-            System.out.println("1. Empezar partida");
-            System.out.println("2. Salir");
-            eleccionMenuPrincipal = teclado.nextInt();
-        } while (eleccionMenuPrincipal != 2);
+        } while (eleccionMenuPrincipal
+                != 2);
 
     }
 }
