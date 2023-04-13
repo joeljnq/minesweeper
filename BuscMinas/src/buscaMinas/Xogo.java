@@ -163,17 +163,17 @@ public class Xogo {
 
     public int getMinasAdxacentes(Celda celda) {
         int toret = 0;
-      /*   for (int i = 0; i < getCelasAdxacentes(celda).size(); i++) {
+         for (int i = 0; i < getCelasAdxacentes(celda).size(); i++) {
             if (getCelasAdxacentes(celda).get(i).isMinada()) {
                 toret++;
             }
         }
-      */   
-       for (Celda celdaAdyacente : getCelasAdxacentes(celda)) {
+        
+     /*  for (Celda celdaAdyacente : getCelasAdxacentes(celda)) {
             if (celdaAdyacente.isMinada()) {
                 toret++;
             }
-        }
+        }*/
         return toret;
     }
 
@@ -184,4 +184,6 @@ public class Xogo {
         System.out.println("4. Marcar celda");
         System.out.println("5. obtener las minas que hay alreder de tu celda");
     }
+    
+  
 }
