@@ -150,9 +150,9 @@ public class Xogo {
         int filaInicial = cela.getFilas();
         int columnaInicial = cela.getColumnas();
 
-        for (int f = filaInicial - 1; f <= filaInicial + 2; f++) {
-            for (int c = columnaInicial - 1; c <= columnaInicial + 2; c++) {
-                if (f != filaInicial) {
+        for (int f = filaInicial - 1; f <= filaInicial+2; f++) {
+            for (int c = columnaInicial - 1; c <= columnaInicial+2; c++) {
+                if (f != filaInicial ) {
                     toret.add(mineSweeper[f][c]);
                 }
             }
@@ -163,17 +163,17 @@ public class Xogo {
 
     public int getMinasAdxacentes(Celda celda) {
         int toret = 0;
-         for (int i = 0; i < getCelasAdxacentes(celda).size(); i++) {
+      /*   for (int i = 0; i < getCelasAdxacentes(celda).size(); i++) {
             if (getCelasAdxacentes(celda).get(i).isMinada()) {
                 toret++;
             }
         }
-         
-      /*  for (Celda celdaAdyacente : getCelasAdxacentes(celda)) {
+      */   
+       for (Celda celdaAdyacente : getCelasAdxacentes(celda)) {
             if (celdaAdyacente.isMinada()) {
                 toret++;
             }
-        }*/
+        }
         return toret;
     }
 
