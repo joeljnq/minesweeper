@@ -54,7 +54,7 @@ public class Main {
                     }else if(eleccionMenuInterno == 5 && finJuego == false){
                          System.out.println("Primero pon la fila de la celda que quieres marcar");
                         System.out.println("Luego la colummna");
-                        System.out.println(a.getMinasAdxacentes(a.getCelda(filas=teclado.nextInt(), columnas=teclado.nextInt())));      
+                       a.marcarCelda(a.getCelda(filas=teclado.nextInt(), columnas=teclado.nextInt()));
                     }
 
                     if (a.comprobarCelasAbrir()) {

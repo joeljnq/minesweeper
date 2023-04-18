@@ -95,8 +95,10 @@ public class Xogo {
         //  boolean comprobrarCadxacentes = false; esto es un atributo para la recurisvidad 
         if (cela.getEstado() == 3) {
             System.out.println("Ya está destapada");
-        } else {
-            cela.setEstado(3);
+        } else if(getMinasAdxacentes(cela)==0){
+           cela.setEstado(3);  //esto es para abrir cela pero estoy haciendo pruebas de recursividad
+         
+         
         }
     }
 
