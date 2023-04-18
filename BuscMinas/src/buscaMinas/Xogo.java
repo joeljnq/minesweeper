@@ -150,9 +150,9 @@ public class Xogo {
         int filaInicial = cela.getFilas();
         int columnaInicial = cela.getColumnas();
 
-        for (int f = filaInicial - 1; f <= filaInicial+2; f++) {
-            for (int c = columnaInicial - 1; c <= columnaInicial+2; c++) {
-                if (f != filaInicial ) {
+        for (int f = filaInicial - 1; f <= filaInicial+1; f++) {
+            for (int c = columnaInicial - 1; c <= columnaInicial+1; c++) {
+                if (f != filaInicial || c!=columnaInicial ) {
                     toret.add(mineSweeper[f][c]);
                 }
             }
