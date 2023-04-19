@@ -37,6 +37,11 @@ public class Main {
                         System.out.println("primero pon la fila de la celda que quieres abrir");
                         System.out.println("Luego pon la columna");
                         a.abrirCela(a.getCelda(filas = teclado.nextInt(), columnas = teclado.nextInt()));
+                        if (a.getCelda(filas, columnas).isMinada()) {
+
+                            System.out.println("PERDISTE, TOCASTE MINA");
+                            finJuego = true;
+                        }
                         System.out.println("\n");
 
                     } else if (eleccionMenuInterno == 2 && finJuego == false) {
@@ -47,16 +52,15 @@ public class Main {
                         System.out.println("False = aun queda Celdas por abrir");
                         System.out.println("True = todas las celdas estan abiertas.");
 
-                    }else if (eleccionMenuInterno == 4 && finJuego == false) {
+                    } else if (eleccionMenuInterno == 4 && finJuego == false) {
                         System.out.println("Primero pon la fila de la celda que quieres marcar");
                         System.out.println("Luego la colummna");
-                        a.marcarCelda(a.getCelda(filas=teclado.nextInt(), columnas=teclado.nextInt()));
-                    }else if(eleccionMenuInterno == 5 && finJuego == false){
-                         System.out.println("Primero pon la fila de la celda que quieres marcar");
+                        a.marcarCelda(a.getCelda(filas = teclado.nextInt(), columnas = teclado.nextInt()));
+                    } else if (eleccionMenuInterno == 5 && finJuego == false) {
+                        System.out.println("Primero pon la fila de la celda que quieres marcar");
                         System.out.println("Luego la colummna");
-                       a.marcarCelda(a.getCelda(filas=teclado.nextInt(), columnas=teclado.nextInt()));
+                        a.marcarCelda(a.getCelda(filas = teclado.nextInt(), columnas = teclado.nextInt()));
                     }
-
                     if (a.comprobarCelasAbrir()) {
                         System.out.println("Ganaste la partida");
                         finJuego = true;
