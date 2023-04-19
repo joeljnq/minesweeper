@@ -95,8 +95,10 @@ public class Xogo {
         //  boolean comprobrarCadxacentes = false; esto es un atributo para la recurisvidad 
         if (cela.getEstado() == 3) {
             System.out.println("Ya está destapada");
-        } else {
-            cela.setEstado(3);
+        } else if(getMinasAdxacentes(cela)==0){
+           cela.setEstado(3);  //esto es para abrir cela pero estoy haciendo pruebas de recursividad
+         
+         
         }
     }
 
@@ -150,9 +152,9 @@ public class Xogo {
         int filaInicial = cela.getFilas();
         int columnaInicial = cela.getColumnas();
 
-        for (int f = filaInicial - 1; f <= filaInicial + 2; f++) {
-            for (int c = columnaInicial - 1; c <= columnaInicial + 2; c++) {
-                if (f != filaInicial) {
+        for (int f = filaInicial - 1; f <= filaInicial+1; f++) {
+            for (int c = columnaInicial - 1; c <= columnaInicial+1; c++) {
+                if (f != filaInicial || c!=columnaInicial ) {
                     toret.add(mineSweeper[f][c]);
                 }
             }
@@ -168,8 +170,8 @@ public class Xogo {
                 toret++;
             }
         }
-         
-      /*  for (Celda celdaAdyacente : getCelasAdxacentes(celda)) {
+        
+     /*  for (Celda celdaAdyacente : getCelasAdxacentes(celda)) {
             if (celdaAdyacente.isMinada()) {
                 toret++;
             }
@@ -184,4 +186,6 @@ public class Xogo {
         System.out.println("4. Marcar celda");
         System.out.println("5. obtener las minas que hay alreder de tu celda");
     }
+    
+  
 }
