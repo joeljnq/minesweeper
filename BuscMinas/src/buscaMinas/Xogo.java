@@ -205,6 +205,7 @@ private void encherMinas(int minas) {
         System.out.println("2. Abrir todas las celdas que tienen minas");
         System.out.println("3. Comprueba si hay celdas por abrir");
         System.out.println("4. Marcar celda");
+        System.out.println("5. Salir de la partida");
     }
     
 

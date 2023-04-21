@@ -56,17 +56,14 @@ public class Main {
                         System.out.println("Primero pon la fila de la celda que quieres marcar");
                         System.out.println("Luego la colummna");
                         a.marcarCelda(a.getCelda(filas = teclado.nextInt(), columnas = teclado.nextInt()));
-                    } else if (eleccionMenuInterno == 5 && finJuego == false) {
-                        System.out.println("Primero pon la fila de la celda que quieres marcar");
-                        System.out.println("Luego la colummna");
-                        a.marcarCelda(a.getCelda(filas = teclado.nextInt(), columnas = teclado.nextInt()));
+                 
                     }
                     if (a.comprobarCelasAbrir()) {
                         System.out.println("Ganaste la partida");
                         finJuego = true;
                     }
 
-                } while (eleccionMenuInterno != 6 && finJuego == false);
+                } while (eleccionMenuInterno != 5 && finJuego == false);
 
             }
         } while (eleccionMenuPrincipal != 2);
