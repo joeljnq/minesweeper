@@ -56,7 +56,7 @@ public class Main {
                         System.out.println("Primero pon la fila de la celda que quieres marcar");
                         System.out.println("Luego la colummna");
                         a.marcarCelda(a.getCelda(filas = teclado.nextInt(), columnas = teclado.nextInt()));
-                 
+
                     }
                     if (a.comprobarCelasAbrir()) {
                         System.out.println("Ganaste la partida");

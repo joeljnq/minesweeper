@@ -43,11 +43,6 @@ public class Celda {
         return columnas;
     }
 
-
-    
-    
-    
-
     @Override
     public String toString() {
         return "Celda Minada: " + minada + " estado: " + estado + " fila: " + filas + " columna: " + columnas;

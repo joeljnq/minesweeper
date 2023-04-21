@@ -35,21 +35,7 @@ public class Xogo {
         encherMinas(minas);
     }
 
-    /*public Celda[][] getCelda(int fila, int columna) {
-       return mineSweeper[fila][columna];
-  }
-     */
     public void muestra() {
-        /*   for (int i = 0; i < mineSweeper.length; i++) {
-            
-            for (int j = 0; j < mineSweeper[i].length; j++) {
-               
-                System.out.print("|" + mineSweeper[i][j].getEstado() + "|\t");
-            }
-            System.out.println("");
-        }
-         */
-
         Character[][] muestra = new Character[filas][columnas];
 
         for (int i = 0; i < muestra.length; i++) {
@@ -90,7 +76,7 @@ public class Xogo {
     }
 
     public void abrirCela(Celda cela) {
-        //  boolean comprobrarCadxacentes = false; esto es un atributo para la recurisvidad 
+
         if (cela.getEstado() != 3) {
             cela.setEstado(3);
 
@@ -132,21 +118,7 @@ public class Xogo {
         return toret;
     }
 
-    /* metodo  public boolean finJuego(){
-        boolean toret = true;
-        for (int i = 0; i < mineSweeper.length; i++) {
-            for (int j = 0; j < mineSweeper[i].length; j++) {
-                if (mineSweeper[i][j].isMinada() == false) {
-                    if (mineSweeper[i][j].getEstado() !=3 ) {
-                        toret = false;
-                    }
-                }
-            }
-        }
-    return toret ;
-}*/
-
-private void encherMinas(int minas) {
+    private void encherMinas(int minas) {
 
         for (int i = 0; i < minas; i++) {
             mineSweeper[random.nextInt(filas)][random.nextInt(columnas)].setMinada(true);
@@ -159,15 +131,6 @@ private void encherMinas(int minas) {
 
     private ArrayList<Celda> getCelasAdxacentes(Celda cela) {
         ArrayList<Celda> toret = new ArrayList<>();
-        /*   toret.add(mineSweeper[cela.getFilas()][cela.getColumnas() + 1]);
-        toret.add(mineSweeper[cela.getFilas()][cela.getColumnas() - 1]);
-        toret.add(mineSweeper[cela.getFilas() + 1][cela.getColumnas()]);
-        toret.add(mineSweeper[cela.getFilas() + 1][cela.getColumnas() - 1]);
-        toret.add(mineSweeper[cela.getFilas() + 1][cela.getColumnas() + 1]);
-        toret.add(mineSweeper[cela.getFilas() - 1][cela.getColumnas()]);
-        toret.add(mineSweeper[cela.getFilas() - 1][cela.getColumnas() + 1]);
-        toret.add(mineSweeper[cela.getFilas() - 1][cela.getColumnas() - 1]);*/
-
         int filaInicial = cela.getFilas();
         int columnaInicial = cela.getColumnas();
 
@@ -192,11 +155,6 @@ private void encherMinas(int minas) {
             }
         }
 
-        /*  for (Celda celdaAdyacente : getCelasAdxacentes(celda)) {
-            if (celdaAdyacente.isMinada()) {
-                toret++;
-            }
-        }*/
         return toret;
     }
 
@@ -207,6 +165,5 @@ private void encherMinas(int minas) {
         System.out.println("4. Marcar celda");
         System.out.println("5. Salir de la partida");
     }
-    
 
 }
